@@ -1,0 +1,70 @@
+
+.parentOfContainer{
+    background-color: #282f5c;
+}
+.container{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.column-3, .column-2 , .column-1{
+    float: left;
+}
+.column-3{
+    width: 75%;
+}
+.column-2{
+    width: 50%;
+}
+.column-1{
+    width: 25%;
+}
+
+.result{
+    display: block;
+    border: none;
+    height: 100px;
+    font-size: 2rem;
+    padding: 10px 25px 0;
+    width: 95%;
+    float: right;
+    text-align: right;
+    background-color: #fff;
+  } 
+  .floaty-p{
+    position: absolute;
+    right: 25px;
+    z-index: 99;
+    top: 0px;
+    color: #aaa;
+  }
+  
+  button{
+    height: 129px;
+    border: 1px solid #ddd;
+    /* background: #eee; */
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    /* background: linear-gradient(to bottom right, #99ccff, #282f5c); */
+    /* background: linear-gradient(to bottom right, #282f5c, #99ccff); */
+     background: linear-gradient(to bottom right, #282f5c, #669acd)
+     /* 89abcd */
+  
+  }
+  @media (max-width: 768px) { 
+.container{
+    width: 100%;
+}
+.parentOfContainer{
+    height: 100%;
+}
+button{
+    height: 85px;
+}
+.result{
+    height: 70px;
+   } 
+   }
